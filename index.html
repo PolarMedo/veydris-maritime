@@ -126,7 +126,15 @@
     .fleet-accent { background: var(--red); }
 
     .fleet-content { padding: 28px; }
-
+    
+    .fleet-image {
+     width: 100%;
+     height: 220px;
+     object-fit: cover;
+     display: block;
+     border-radius: 6px;
+     margin-bottom: 22px;
+   }
     .vessel-id {
       color: var(--blue);
       font-size: 0.78rem;
@@ -218,24 +226,27 @@
           Every vessel has a purpose. Every voyage has a destination.
         </p>
 
-        <article class="fleet-card">
-          <div class="fleet-accent"></div>
-          <div class="fleet-content">
-            <div class="vessel-id">VM-01 / RESEARCH DIVISION</div>
-            <h3>Arctic Research Vessel</h3>
-            <p class="muted">
-              The flagship of Veydris Maritime. Dedicated to
-              polar research, marine exploration, and diving
-              bell operations in DSS3.
-            </p>
-            <div class="specs">
-              <span class="spec">Polar Research</span>
-              <span class="spec">Diving Bell</span>
-              <span class="spec">DSS3 Fleet</span>
-            </div>
-          </div>
-        </article>
-
+         <div class="fleet-content">
+    <img
+      src="images/arctic-research.jpg"
+      alt="Arctic Research Vessel"
+      class="fleet-image"
+    >
+    <div class="vessel-id">VM-01 / RESEARCH DIVISION</div>
+    <h3>Arctic Research Vessel</h3>
+    <p class="muted">
+      The flagship of Veydris Maritime. Dedicated to
+      polar research, marine exploration, and diving
+      bell operations in DSS3.
+    </p>
+    <div class="specs">
+      <span class="spec">Polar Research</span>
+      <span class="spec">Diving Bell</span>
+      <span class="spec">DSS3 Fleet</span>
+    </div>
+  </div>
+</article>
+        
         <p class="muted" style="margin-top:24px">
           More vessels will be added to the registry as the fleet grows.
         </p>
